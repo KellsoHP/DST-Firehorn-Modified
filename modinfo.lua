@@ -1,7 +1,7 @@
 name = "Hornfire"
 description = "Traps a firefly to give endless light"
 author = "Parusoid"
-version = "1.2" 
+version = "1.3" 
 forumthread = ""
 api_version_dst = 10
 dst_compatible = true
@@ -15,7 +15,20 @@ icon = "modicon.tex"
 
 server_filter_tags = {"light"}
 
---configuration_options = {}
+configuration_options = 
+{
+	{
+		name = "HORNFIRE_LANGUAGE",
+		label = "Language",
+		hover = "Text language",
+		options =	
+		{
+			{description = "English", data = "english"},
+			{description = "Russian", data = "russian"},
+		},
+		default = "english",
+	},
+}
 
 --[[
 Version 1.0

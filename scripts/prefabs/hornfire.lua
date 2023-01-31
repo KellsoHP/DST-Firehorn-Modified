@@ -13,8 +13,10 @@ local prefabs =
 
 local function dig_up(inst, worker)
 	inst.Light:Enable(false)
-	inst.components.lootdropper:SpawnLootPrefab("boneshard")
-    inst.components.lootdropper:SpawnLootPrefab("fireflies")
+    
+	local hornloot = inst.components.lootdropper:SpawnLootPrefab("horn")
+	hornloot.components.finiteuses:SetUses(1)
+	
     inst.components.lootdropper:SpawnLootPrefab("rocks")	
     inst:Remove()
 end
@@ -126,20 +128,6 @@ local function fn()
 	
     return inst
 end
-
-STRINGS.NAMES.HORNFIRE = "Hornfire"
-STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNFIRE = "Finally cought!"
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNFIRE = "They do not run away!"
-STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HORNFIRE = "Less sparkly!"
-STRINGS.CHARACTERS.WENDY.DESCRIBE.HORNFIRE = "A suffering brightness in the dark."
-STRINGS.CHARACTERS.WX78.DESCRIBE.HORNFIRE = "UNHYGIENIC BIOLUMISCENT INCSECTS"
-STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE.HORNFIRE = "They can't see me aproach so they do not disperse."
-STRINGS.CHARACTERS.WOODIE.DESCRIBE.HORNFIRE = "I still remember Algonquin park..."
-STRINGS.CHARACTERS.WAXWELL.DESCRIBE.HORNFIRE = "Charming."
-STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.HORNFIRE = "Fairy lights glöwnig!"
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.HORNFIRE = "Not so elusive now, buggies!"
-STRINGS.CHARACTERS.WINONA.DESCRIBE.HORNFIRE = "I knew it was usefull from the beginning."
-STRINGS.RECIPE_DESC.HORNFIRE = "The horn is NOT on fire."
 
 return Prefab("hornfire", fn, assets, prefabs),
 	MakePlacer("hornfire_placer", "hornfire", "hornfire", "idle")
