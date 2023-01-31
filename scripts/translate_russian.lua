@@ -10,7 +10,7 @@ local language_strings={
 	["HORNFIRE_CHARACTERS_WICKERBOTTOM_DESCRIBE"] = "Они не видят, как я приближаюсь, поэтому не расходятся.",
 	["HORNFIRE_CHARACTERS_WOODIE_DESCRIBE"] = "Я до сих пор помню Алгонкинский парк...",
 	["HORNFIRE_CHARACTERS_WAXWELL_DESCRIBE"] = "Очаровательно.",
-	["HORNFIRE_CHARACTERS_WATHGRITHR_DESCRIBE"] = "Сказочные огонёчкм светятся!",
+	["HORNFIRE_CHARACTERS_WATHGRITHR_DESCRIBE"] = "Сказочные огонёчки светятся!",
 	["HORNFIRE_CHARACTERS_WEBBER_DESCRIBE"] = "Теперь вы не такие быстрые, жучки!",
 	["HORNFIRE_CHARACTERS_WINONA_DESCRIBE"] = "Я знала, что это полезно с самого начала.",
 }
